@@ -31,15 +31,31 @@ namespace ProgramozasiTetelek
             Console.WriteLine("{0}",osszes);
         }
 
+        static void Megszamolas()
+        {
+            Console.WriteLine("Megszámolás tétele");
+            int darab = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[i] % 3 == 0)
+                {
+                    darab++;
+                }
+            }
+            Console.WriteLine("{0} 3-al osztható elem van", darab);
+        }
+
         static void Main(string[] args)
         {
             TombKiiras();
 
             Osszegzes();
 
+            Megszamolas();
+
             Console.ReadKey();
         }
 
-       
+        
     }
 }
