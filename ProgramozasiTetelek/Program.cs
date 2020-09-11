@@ -45,6 +45,24 @@ namespace ProgramozasiTetelek
             Console.WriteLine("{0} 3-al osztható elem van", darab);
         }
 
+        static void Eldontes()
+        {
+            Console.WriteLine("Eldöntés tétele");
+            int i = 0;
+            while (i < tomb.Length && tomb[i] != 69 )
+            {
+                i++;
+            }
+
+            if (i < tomb.Length)
+            {
+                Console.WriteLine("Van a tömbben 69.");
+            }
+            else
+            {
+                Console.WriteLine("Nincs a tömbben 69.");
+            }
+        }
         static void Main(string[] args)
         {
             TombKiiras();
@@ -53,9 +71,11 @@ namespace ProgramozasiTetelek
 
             Megszamolas();
 
+            Eldontes();
+
             Console.ReadKey();
         }
 
-        
+       
     }
 }
