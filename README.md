@@ -29,3 +29,7 @@
 - Kivalasztas() metódus létrehozása
     - Hányadik az 50?
     - kiírni a helyét a tömbben
+
+## Keresés (lineáris)
+- Kereses() metódus létrehozása
+    - Van-e benne 50 és ha van hányadik?

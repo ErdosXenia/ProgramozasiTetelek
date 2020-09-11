@@ -74,6 +74,25 @@ namespace ProgramozasiTetelek
             }
             Console.WriteLine("Az 50 a {0}. a tömbben.", i + 1);
         }
+
+        static void Kereses()
+        {
+            Console.WriteLine("Keresés tétele");
+            int i = 0;
+            while (i < tomb.Length && tomb[i] != 50)
+            {
+                i++;
+            }
+            if (i < tomb.Length)
+            {
+                Console.WriteLine("Van benne 50 és a {0}. helyen/ {1}. indexű helyen van.", i + 1, i);
+            }
+            else
+            {
+                Console.WriteLine("Nincs benne 50.");
+            }
+        }
+
         static void Main(string[] args)
         {
             TombKiiras();
@@ -89,6 +108,10 @@ namespace ProgramozasiTetelek
             Console.WriteLine();
 
             Kivalasztas();
+            Console.WriteLine();
+
+            Kereses();
+            Console.WriteLine();
 
             Console.ReadKey();
         }
