@@ -93,6 +93,20 @@ namespace ProgramozasiTetelek
             }
         }
 
+        static void Maximum()
+        {
+            Console.WriteLine("Maximum keresés tétele");
+            int max = 0;
+            for (int i = 1; i < tomb.Length; i++)
+            {
+                if (tomb[i] > tomb[max])
+                {
+                    max = i;
+                }
+            }
+            Console.WriteLine("A legnagyobb elem a {0} melynek indexe: {1} / helye: {2}.", tomb[max], max, max + 1);
+        }
+
         static void Main(string[] args)
         {
             TombKiiras();
@@ -112,6 +126,8 @@ namespace ProgramozasiTetelek
 
             Kereses();
             Console.WriteLine();
+
+            Maximum();
 
             Console.ReadKey();
         }
