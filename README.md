@@ -10,3 +10,7 @@
     - nincs papramétere
     - a tömb elemeit vesszõvel elválasztva egy sorba írja
 
+## Összegzés
+- Osszegzes() metódus letrehozása
+    - összegzés tétele a tömbön
+    - eredmény kiírása a console-ra
